@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bedroomscientist aka lov3me</title>
+        <link rel="icon" type="image/png" href="images1/favicon.jpg" >
+    </head>
+    <body>
+        <div id="age"></div>
 
+  <script>
+    // Birth date
+    const birthDate = new Date("2008-10-11T00:00:00");
+
+    function updateAge() {
+
+      const now = new Date();
+
+      // Difference in milliseconds
+      const diff = now - birthDate;
+
+      // Convert to years
+      const years = diff / (1000 * 60 * 60 * 24 * 365.25);
+
+      document.getElementById("age").innerText =
+        years.toFixed(9) + " years old";
+    }
+
+    // Run every second
+    setInterval(updateAge, 10);
+
+    // Run immediately too
+    updateAge();
+  </script>
+
+    </body>
+</html>
