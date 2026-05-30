@@ -6,7 +6,7 @@
     </head>
     <body>
         <div id="age"></div>
-
+        <div id="debutdate"></div>
   <script>
     // Birth date
     const birthDate = new Date("2008-10-11T00:00:00");
@@ -32,5 +32,30 @@
     updateAge();
   </script>
 
+  <p id="debutdate"></p>
+  <button><a href="https://www.youtube.com/watch?v=WxOa5db0lFQ" target="_blank">YouTube</a></button>
+  <button><a href="https://open.spotify.com/album/2jfNORGbQIFEKVglF7yT5i?si=fOfvce7GQ4OSzrTD2nVJfQ" target="_blank">Spotify</a></button>
+  <button><a href="https://soundcloud.com/bedroomscientist/lov3me-love-me?si=7e9e1e8b3e15459d9b09b66ca2fe3157&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Soundcloud</a></button>
+
+<script>
+const debutDate = new Date("2026-05-25T22:00:00");
+
+function updateDebutDate() {
+    const now = new Date();
+    const diff = now - debutDate;
+    const days = diff / (1000 * 60 * 60 * 24);
+
+    document.getElementById("debutdate").innerText =
+        "My debut single was uploaded " +
+        days.toFixed(9) +
+        " days ago";
+}
+
+setInterval(updateDebutDate, 10);
+updateDebutDate();
+</script>
+  <p>My Competitive Chess Profile I look ugly lol</p> <button><a href="https://ratings.fide.com/profile/13026178" target="_blank">FIDE</a></button>
+  <h1 style="text-decoration: underline;">Blog</h1>
+  <p>The date I reached 2000 on <a href="https://www.chess.com/member/bedroomscientist/stats/rapid" target="_blank">Chess.com</a> - May 29th 2026 11:34PM GMT+6:30 Friday </p>
     </body>
 </html>
